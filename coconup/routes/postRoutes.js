@@ -1,9 +1,9 @@
-const express = require('express');
-const { crearPublicacion, obtenerPublicaciones } = require('../controllers/postController');
-const authMiddleware = require('../middleware/authMiddleware');
-const router = express.Router();
+import express from 'express';
+import { crearPublicacion, obtenerPublicaciones } from './controllers/postController';
+import authMiddleware from './middleware/authMiddleware';
+import router from express.Router();
 
 router.post('/', authMiddleware, crearPublicacion);
 router.get('/', obtenerPublicaciones);
 
-module.exports = router;
+export default router;

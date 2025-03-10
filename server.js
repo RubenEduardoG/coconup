@@ -1,16 +1,13 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const mongoose = require("mongoose");
-const cors = require("cors");
+import express from "express";
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+import cors from "cors";
 
-const connectDB = require("./config/db"); // Asegúrate de que este archivo existe
-const userRoutes = require("./routes/userRoutes"); // Verifica que la ruta sea correcta
+import connectDB from "./coconup/config/db.js" // Conecta a la base de datos
+import userRoutes from "./coconup/routes/userRoutes.js"; // Verifica que la ruta sea correcta
 
 // Cargar variables de entorno
 dotenv.config();
-
-// Conectar a MongoDB
-connectDB();
 
 // Inicializar Express
 const app = express();
@@ -26,6 +23,10 @@ app.use("/api/users", userRoutes); // Verifica que userRoutes.js esté en la car
 app.get("/", (req, res) => {
   res.send("¡Servidor funcionando correctamente! 🚀");
 });
+
+// Conectar a MongoDB
+connectDB();
+
 
 // Configurar puerto
 const PORT = process.env.PORT || 5000;

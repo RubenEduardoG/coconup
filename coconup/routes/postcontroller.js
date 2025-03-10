@@ -1,4 +1,4 @@
-const Post = require('../models/Post');
+import Post from './models/Post';
 
 exports.crearPublicacion = async (req, res) => {
   const { imagen, descripcion } = req.body;

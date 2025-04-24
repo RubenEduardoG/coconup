@@ -1,0 +1,52 @@
+.navbar {
+    background-color: #cddbc7; /* Verde aún más mate */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .logo-img {
+    width: 300px;         /* el doble del tamaño original */
+    height: 300px;
+    border-radius: 50%;   /* lo hace redondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* sombra suave */
+    object-fit: cover;    /* asegura que se vea bien en círculo */
+  }
+  
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar-logo h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #2b3c2f;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #2b3c2f;
+    font-weight: 500;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,27 @@
+/* Fondo general con verde mate */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dfe9d3; /* Verde mate */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contenedor principal */
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Título principal */
+.App h1 {
+  font-size: 2rem;
+  color: #2b3c2f; /* Verde más oscuro para contraste */
+  margin-bottom: 0.5rem;
+}
+
+/* Subtítulo */
+.App p {
+  font-size: 1.2rem;
+  color: #4f5b47;
+  margin-bottom: 2rem;
+}

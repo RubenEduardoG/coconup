@@ -25,3 +25,31 @@ body {
   color: #4f5b47;
   margin-bottom: 2rem;
 }
+.hero {
+  background-color: #dfe9d3;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #c4d2be;
+}
+
+.hero-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  color: #2b3c2f;
+  margin: 0.5rem 0;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #4f5b47;
+}
+

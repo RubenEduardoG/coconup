@@ -8,11 +8,13 @@
   }
 
   .logo-img {
-    width: 300px;         /* el doble del tamaño original */
+    width: 300px;
     height: 300px;
-    border-radius: 50%;   /* lo hace redondo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* sombra suave */
-    object-fit: cover;    /* asegura que se vea bien en círculo */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    padding: 5px;
   }
   
   

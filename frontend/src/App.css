@@ -30,7 +30,6 @@ body {
   text-align: center;
   padding: 3rem 1rem;
   margin-bottom: 2rem;
-  border-bottom: 2px solid #c4d2be;
 }
 
 .hero-logo {
@@ -43,13 +42,34 @@ body {
 }
 
 .hero-title {
-  font-size: 2.2rem;
+  font-size: 3rem; /* grande */
+  font-weight: bold;
   color: #2b3c2f;
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #4f5b47;
 }
 
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+/* Animación Fade In */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import ProductCard from "./components/ProductCard";
 import "./App.css";
 import Navbar from './components/Navbar';
+import Footer from "./components/Footer";
 
 
 
@@ -59,28 +60,31 @@ function App() {
       imagen: "/productos/jabon-corazon-2.jpeg"
     }
   ];
-  
   return (
     <div className="App">
+      {/* Navbar arriba */}
       <Navbar />
-      <h1>Bienvenido a CoconutBliss 🌴</h1>
-      <p>Tu red de productos naturales</p>
 
-      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-        {productos.map((prod, index) => (
-          <ProductCard key={index} {...prod} />
+      {/* Hero (bienvenida) */}
+      <section className="hero fade-in">
+        <h1 className="hero-title">Coconutbliss 🌴</h1>
+        <p className="hero-subtitle">Bienvenido a nuestra tienda de productos naturales</p>
+      </section>
+
+      {/* Productos */}
+      <section className="product-grid fade-in">
+        {productos.map((producto, index) => (
+          <ProductCard key={index} {...producto} />
         ))}
-      </div>
+      </section>
+
+      {/* Footer al final */}
+      <Footer />
+
+      {/* Botón Volver arriba */}
+      <a href="#" className="back-to-top">↑ Volver arriba</a>
     </div>
   );
 }
-
-<div className="hero">
-  <img src="/logo.coconup.png" alt="Logo Coconutbliss" className="hero-logo" />
-  <h1 className="hero-title">Bienvenido a Coconutbliss 🌴</h1>
-  <p className="hero-subtitle">Productos naturales para tu bienestar</p>
-</div>
-
-
 
 export default App;
